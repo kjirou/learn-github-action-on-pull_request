@@ -1,0 +1,9 @@
+on:
+  pull_request:
+    types: [synchronize]
+jobs:
+  debug-print:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: date
